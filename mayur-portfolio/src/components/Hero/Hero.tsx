@@ -12,9 +12,9 @@ export default function Hero() {
                     </h1>
 
                     {/* Role */}
-                    <h2 className="mt-2 text-sm font-medium uppercase tracking-[0.2em] text-white/80">
+                    <h1 className="mt-2 text-sm font-medium uppercase tracking-[0.2em] text-white/80">
                         C++ / Graphics / Engine Engineering
-                    </h2>
+                    </h1>
 
                     {/* Main Heading */}
                     <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-xl md:text-2xl lg:text-3xl text-white/60">
