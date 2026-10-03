@@ -1,14 +1,6 @@
+import { Project } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
-
-interface Project {
-	title: string;
-	description: string;
-	image: string;
-	technologies: string[];
-	slug: string;
-	github?: string;
-}
 
 interface ProjectCardProps {
 	project: Project;

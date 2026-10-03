@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="border-b border-white/10">
-            <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-16 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
+            <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-16 px-6 py-10 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-14">
                 {/* Left Content */}
                 <div>
                     {/* Name */}
@@ -50,9 +50,10 @@ export default function Hero() {
                         {[
                             "C++",
                             "OpenGL",
-                            "CUDA",
-                            "Vulkan",
+                            "DirectX",
+                            "WebGL",
                             "GLSL",
+                            "CUDA",
                             "OpenCL",
                         ].map((technology) => (
                             <span

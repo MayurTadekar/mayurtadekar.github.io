@@ -7,8 +7,8 @@ export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const navLinks = [
+		{ name: "Projects", href: "/allprojects" },
 		{ name: "About", href: "#about" },
-		{ name: "Projects", href: "#projects" },
 		{ name: "Skills", href: "#skills" },
 		{ name: "Contact", href: "#contact" },
 	];
@@ -20,7 +20,7 @@ export default function Navbar() {
 				{/* Logo / Brand Name */}
 				<div className="flex-shrink-0">
 					<Link href="/" className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-						John<span className="text-blue-600">.Dev</span>
+						Mayur<span className="text-blue-600"> Tadekar</span>
 					</Link>
 				</div>
 
