@@ -1,6 +1,6 @@
-import { Project } from "@/types/types";
+import { FeaturedProject } from "@/types/types";
 
-export const projects: Project[] = [
+export const featuredProjects: FeaturedProject[] = [
 
     {
         title: "Maharudra",
@@ -16,6 +16,7 @@ export const projects: Project[] = [
         ],
         slug: "maharudra",
         github: "",
+        videoLink: "",
     },
     {
         title: "आभास (Aabhas)",
@@ -30,6 +31,7 @@ export const projects: Project[] = [
         ],
         slug: "aabhas",
         github: "",
+        videoLink: "",
     },
 
     // {

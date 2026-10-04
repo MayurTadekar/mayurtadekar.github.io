@@ -2,157 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
-interface Project {
-	title: string;
-	description: string;
-	technologies: string[];
-	platforms: string[];
-	slug: string;
-	date: string;
-	section: string;
-}
-
-const sections = [
-	"All",
-	"RTR",
-	"GPU",
-	"Vulkan",
-	"OpenCL",
-	"Systems",
-];
-
-const technologies = [
-	"All",
-	"OpenGL",
-	"OpenGL ES",
-	"Vulkan",
-	"CUDA",
-	"OpenCL",
-	"WebGL",
-];
-
-const platforms = [
-	"All",
-	"Windows",
-	"Linux",
-	"macOS",
-	"Android",
-	"iOS",
-	"Web",
-];
-
-const projects: Project[] = [
-	{
-		title: "FFT Ocean",
-		description:
-			"Real-time ocean simulation using FFT-based wave generation and GPU computation.",
-		technologies: ["OpenGL"],
-		platforms: ["Windows", "Linux", "macOS"],
-		slug: "fft-ocean",
-		date: "2026-09",
-		section: "RTR",
-	},
-
-	{
-		title: "Atmospheric Scattering",
-		description:
-			"Real-time atmospheric rendering with dynamic sun positioning and volumetric scattering.",
-		technologies: ["OpenGL"],
-		platforms: ["Windows", "Linux", "macOS"],
-		slug: "atmospheric-scattering",
-		date: "2026-08",
-		section: "RTR",
-	},
-
-	{
-		title: "Volumetric Clouds",
-		description:
-			"Real-time volumetric cloud rendering using procedural techniques and GPU shaders.",
-		technologies: ["OpenGL"],
-		platforms: ["Windows", "Linux", "macOS"],
-		slug: "volumetric-clouds",
-		date: "2026-07",
-		section: "RTR",
-	},
-
-	{
-		title: "Procedural Fire",
-		description:
-			"Procedural and raymarched fire rendering implemented using GPU shaders.",
-		technologies: ["OpenGL"],
-		platforms: ["Windows", "Linux", "macOS"],
-		slug: "procedural-fire",
-		date: "2026-06",
-		section: "RTR",
-	},
-
-	{
-		title: "CUDA Smoke",
-		description:
-			"GPU-accelerated smoke simulation with CPU and CUDA performance comparison.",
-		technologies: ["CUDA"],
-		platforms: ["Windows", "Linux"],
-		slug: "cuda-smoke",
-		date: "2026-08",
-		section: "GPU",
-	},
-
-	{
-		title: "Vulkan + OpenCL",
-		description:
-			"GPU interoperability experiments combining Vulkan rendering with OpenCL computation.",
-		technologies: ["Vulkan", "OpenCL"],
-		platforms: ["Windows", "Linux", "Android"],
-		slug: "vulkan-opencl",
-		date: "2026-09",
-		section: "GPU",
-	},
-
-	{
-		title: "Vulkan + CUDA",
-		description:
-			"GPU interoperability experiments combining Vulkan graphics and CUDA computation.",
-		technologies: ["Vulkan", "CUDA"],
-		platforms: ["Windows", "Linux"],
-		slug: "vulkan-cuda",
-		date: "2026-08",
-		section: "GPU",
-	},
-
-	{
-		title: "Maharudra",
-		description:
-			"Large-scale OpenGL graphics project developed using C++, Win32 SDK, and OpenGL 4.5.",
-		technologies: ["OpenGL"],
-		platforms: ["Windows"],
-		slug: "maharudra",
-		date: "2021",
-		section: "RTR",
-	},
-
-	{
-		title: "Vulkan Renderer",
-		description:
-			"A Vulkan-based rendering project exploring modern GPU rendering architecture and graphics pipelines.",
-		technologies: ["Vulkan"],
-		platforms: ["Windows", "Linux", "Android"],
-		slug: "vulkan-renderer",
-		date: "2026-10",
-		section: "Vulkan",
-	},
-
-	{
-		title: "x86 Linux Assembly",
-		description:
-			"Low-level programming experiments using x86 assembly on Linux.",
-		technologies: [],
-		platforms: ["Linux"],
-		slug: "x86-linux-assembly",
-		date: "2025",
-		section: "Systems",
-	},
-];
+import { allProjects, platforms, sections, technologies } from "@/data/allprojects";
 
 export default function ProjectsPage() {
 	const [activeSection, setActiveSection] = useState("All");
@@ -164,8 +14,8 @@ export default function ProjectsPage() {
 	 */
 	const sectionProjects =
 		activeSection === "All"
-			? projects
-			: projects.filter(
+			? allProjects
+			: allProjects.filter(
 				(project) => project.section === activeSection,
 			);
 

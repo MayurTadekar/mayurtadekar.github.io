@@ -1,9 +1,9 @@
-import { Project } from "@/types/types";
+import { FeaturedProject } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
-	project: Project;
+	project: FeaturedProject;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
