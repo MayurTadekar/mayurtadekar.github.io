@@ -43,6 +43,50 @@ export const platforms = [
 // },
 
 export const allProjects: Project[] = [
+	
+	// 21
+	{
+		title: "Interleaved Cube",
+		description: "Each cube vertex contains position, color, normal, and texture-coordinate data arranged sequentially within the same vertex structure. OpenGL accesses each attribute using the appropriate stride and memory offset, allowing multiple vertex attributes to be supplied from a single vertex buffer.",
+		image: "/images/projects/opengl_windows/21.png",
+		technologies: ["OpenGL"],
+		platforms: ["Windows"],
+		slug: "interleaved-cube",
+		datetime: "2026-10-04T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/IrFCQvc0l-k?si=hP6muOkWu4IzlpKe",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/14_Interleaved",
+	},
+
+	// 20
+	{
+		title: "Geometry Shader",
+		description: "The implementation starts with a single triangle as the input primitive. The Geometry Shader receives the triangle and generates three output triangles, demonstrating how additional geometry can be created directly within the programmable graphics pipeline.",
+		image: "/images/projects/opengl_windows/20.png",
+		technologies: ["OpenGL"],
+		platforms: ["Windows"],
+		slug: "geometry-shader",
+		datetime: "2026-10-04T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/gIzjL8-XYh0?si=KaisSKp_F5by451o",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/13_GeometryShader",
+	},
+
+	// 19
+	{
+		title: "Tessellation Shader",
+		description: "The project starts with a simple line and uses the Tessellation Control Shader (TCS) and Tessellation Evaluation Shader (TES) to subdivide and evaluate the geometry. The generated tessellated positions are evaluated along a Bezier curve, transforming the original line into a smooth curved shape.",
+		image: "/images/projects/opengl_windows/19.png",
+		technologies: ["OpenGL"],
+		platforms: ["Windows"],
+		slug: "tessellation-shader",
+		datetime: "2026-10-04T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/JsDtzMhNc7k?si=Ca48iYOi9c0mZn10",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/12_TessellationShader",
+	},
+
+	// 18
 	{
 		title: "24 Material Spheres",
 		description: "Each sphere is assigned different ambient, diffuse, specular, and shininess properties, allowing the visual response of different materials to be compared within the same lighting environment.",
@@ -53,9 +97,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/EGf8OndTmLQ?si=ELCo7b4YZnk9QbLj",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/07_24_Spheres_Materials",
 	},
 
+	// 17
 	{
 		title: "3 Lights on Sphere",
 		description: "The scene contains red, green, and blue lights that revolve around the sphere. Their changing positions continuously modify the illumination across the surface, while their individual colors combine to produce varying RGB lighting effects.",
@@ -66,9 +111,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/1o30CpihQqg?si=dDlhpFTfee9tKyxH",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/06_ThreeMovingLightsOnStaticSphere",
 	},
 
+	// 16
 	{
 		title: "Sun, Earth, Moon",
 		description: "The Earth revolves around the Sun, while the Moon revolves around the Earth. The transformation hierarchy is implemented using Push Matrix and Pop Matrix operations, allowing the Earth's transformations to act as the parent coordinate system for the Moon.",
@@ -79,9 +125,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/n_m-gqMF3pA?si=Di_0BHV61lvAUGYX",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/10_PushPopMatrix/01_SolarSystemWithMoon",
 	},
 
+	// 15
 	{
 		title: "Per Vertex-Per Fragment Lighting",
 		description: "The Per-Vertex implementation performs ambient, diffuse, and specular calculations in the vertex shader, with the resulting values interpolated across the geometry. The Per-Fragment implementation performs the lighting calculations for each fragment, providing more detailed evaluation across the rendered surface.",
@@ -92,9 +139,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/skUDi3rxOQg?si=MDuJCwYAGoI3u00w",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/05_PerVertePerFragmentToggle",
 	},
 
+	// 14
 	{
 		title: "Per Fragment Lighting",
 		description: "The ambient, diffuse, and specular lighting components are calculated independently for each fragment within the fragment shader. This provides more detailed lighting across the sphere's curved surface compared to the previous per-vertex lighting implementation, where lighting values are calculated at vertex locations and interpolated across the geometry.",
@@ -105,9 +153,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/sXBoo2N_0TA?si=GX2DLxhlHiP7gwwm",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/03_PerFragmentLighting/02_Albedo",
 	},
 
+	// 13
 	{
 		title: "Per Vertex Lighting",
 		description: "The Per-Vertex implementation performs ambient, diffuse, and specular calculations in the vertex shader, with the resulting values interpolated across the geometry. The Per-Fragment implementation performs the lighting calculations for each fragment, providing more detailed evaluation across the rendered surface.",
@@ -118,9 +167,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/lG6xBx6Lyqs?si=ySkjuiD-e4eB6G1f",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/02_PerVertexLighting/02_Albedo",
 	},
 
+	// 12
 	{
 		title: "Two Lights on Spinning Pyramid",
 		description: "The lighting system combines ambient, diffuse, and specular components to calculate the final illumination of the pyramid. The two light sources contribute independently to the scene, producing varying illumination and specular highlights across the pyramid's surfaces as it rotates.",
@@ -131,9 +181,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/7lnU11ai28A?si=M5PROZmrVWvm1Iwc",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/04_TwoLightsOnSpiningPyramid/02_PerFragment",
 	},
 
+	// 11
 	{
 		title: "Diffuse Light Sphere",
 		description: "The sphere is illuminated using a directional light source, with the intensity across its curved surface determined by the relationship between the surface normals and the light direction. The continuous curvature of the sphere provides a clear visualization of smooth diffuse illumination across a 3D surface.",
@@ -144,9 +195,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/vUiKuHOHn5w?si=EqgKaeYls09iL-x0",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/01_DiffuseLight/03_Sphere",
 	},
 
+	// 10
 	{
 		title: "Diffuse Light Pyramid",
 		description: "The pyramid is illuminated using a directional light source, with each face receiving different illumination based on the relationship between its surface normal and the light direction.",
@@ -157,9 +209,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/AtfT_vL1xK0?si=o_lUhe45t3HvAS7T",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/01_DiffuseLight/02_Pyramid",
 	},
 
+	// 9
 	{
 		title: "Diffuse Light Cube",
 		description: "The cube is illuminated by a directional light source, with the brightness of each surface determined by the relationship between its **surface normal and the light direction**. This produces different illumination levels across the cube's faces as their orientations change relative to the light.",
@@ -170,9 +223,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/sFh43E2TxgA?si=LRPCZTdnAD3Hds_0",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/09_Lights/01_DiffuseLight/01_Cube",
 	},
 
+	// 8
 	{
 		title: "Textured 3D Shapes",
 		description: "The project renders a 3D pyramid with a stone texture and a cube featuring a Kundali texture. Each object uses texture coordinates to map 2D image data onto its individual surfaces, demonstrating how texture mapping extends from simple planar geometry to three-dimensional objects.",
@@ -183,9 +237,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/TCmusCQ9lpA?si=omWQfI5Hrpr1UJv-",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/07_Texture/02_TextureTo3DShapes/03_TwoShapes",
 	},
 
+	// 7
 	{
 		title: "Procedural Checkerboard",
 		description: "Unlike image-based texture mapping, this project generates the checkerboard pattern programmatically using texture coordinates and shader-based mathematical logic. The resulting pattern is rendered directly onto a quad without relying on an external texture image.",
@@ -196,9 +251,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/TCmusCQ9lpA?si=omWQfI5Hrpr1UJv-",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/07_Texture/04_Checkerboard",
 	},
 
+	// 6
 	{
 		title: "Wicked Smiley",
 		description: "The project renders a quad with a smiley-face image mapped across its surface using texture coordinates. The texture is sampled by the fragment shader and applied to the rendered geometry, introducing image-based rendering beyond the earlier vertex-color-based examples.",
@@ -209,9 +265,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/uQDBUy0LJos?si=C0dAaHL8SK0ci3VA",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/07_Texture/01_2DTexture_SmileyTexture",
 	},
 
+	// 5
 	{
 		title: "3D Rotation Shapes",
 		description: "A real-time OpenGL implementation demonstrating 3D rotational transformations applied to multiple colored 3D objects. The scene contains a 3D pyramid and a cube-like geometric object, each rendered with multiple vertex/face colors. The objects continuously rotate in 3D space, allowing different faces to become visible as their orientations change relative to the camera.",
@@ -222,9 +279,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/L8-enMy4Xhk?si=sXUVYjdNA_ILoOkv",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/06_3DRotation/02_Colored/02_TwoShapes",
 	},
 
+	// 4
 	{
 		title: "2D Rotation Shapes",
 		description: "A real-time OpenGL implementation demonstrating 2D rotational transformations and animation applied to multiple geometric primitives. The scene contains a multi-colored triangle and rectangle, both rendered using per-vertex RGB color attributes. The shapes are continuously rotated using transformation matrices while the GPU interpolates their vertex colors across the rasterized primitives.",
@@ -235,9 +293,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/a4ELovAevL4?si=rU05mKlIVR9cRpBh",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/05_2DRotation/02_Colored/02_TwoShapes",
 	},
 
+	// 3
 	{
 		title: "Two Colored Shapes",
 		description: "The project renders a multi-colored triangle and rectangle, with each primitive using per-vertex RGB color attributes. The graphics pipeline interpolates these colors across the rasterized surfaces, producing smooth color transitions across both shapes.",
@@ -248,9 +307,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/guJ4IBN4EHE?si=d6X3gXagXkOXgBwU",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/04_Perspective/02_Colored/02_TwoShapes",
 	},
 
+	// 2
 	{
 		title: "Multi-Colored Rectangle",
 		description: "A foundational OpenGL rendering implementation demonstrating a multi-colored rectangle using per-vertex color attributes. Each vertex contributes RGB color information, which is interpolated across the rasterized geometry by the graphics pipeline to produce a smooth multi-colored gradient across the rectangle.",
@@ -261,9 +321,10 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/01UwILbPD08?si=5jJNrLD2TU54KnKp",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/04_Perspective/02_Colored/01_SingleShape/02_Rectangle",
 	},
 
+	// 1
 	{
 		title: "Multi-Colored Triangle",
 		description: "A foundational OpenGL rendering implementation demonstrating real-time rendering of a single triangle with per-vertex RGB color attributes. The GPU interpolates the vertex colors across the rasterized primitive to generate a smooth multi-colored gradient.",
@@ -274,6 +335,6 @@ export const allProjects: Project[] = [
 		datetime: "2026-10-04T00:00:00Z",
 		section: "RTR",
 		videoLink: "https://www.youtube.com/embed/qknQjHLwZlY?si=h0i_b6tPL3xR9p22",
-		github: "",
+		github: "https://github.com/MayurTadekar/Real-Time-Rendering/tree/main/01_OpenGL/02_PP/01_Windows/04_Perspective/02_Colored/01_SingleShape/01_Triangle",
 	},
 ];
