@@ -195,7 +195,7 @@ export default async function ProjectPage({
 								</p>
 
 								<p className="mt-3 text-sm text-white/50">
-									{project.date}
+									{project.datetime}
 								</p>
 							</div>
 
