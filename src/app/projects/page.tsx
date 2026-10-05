@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { allProjects, platforms, sections, technologies } from "@/data/allprojects";
+import Image from "next/image";
 
 export default function ProjectsPage() {
 	const [activeSection, setActiveSection] = useState("All");
@@ -236,90 +237,100 @@ export default function ProjectsPage() {
 					{/* Projects */}
 					{filteredProjects.length > 0 ? (
 						<div className="divide-y divide-white/10">
-							{
-								filteredProjects.map((project, index) => (
-									<Link
-										key={project.slug}
-										href={`/projects/${project.slug}`}
-										className="group block py-8 first:pt-0 last:pb-0"
-									>
-										<div className="flex gap-6 md:gap-10">
-											{/* Number */}
-											<span className="pt-1 text-xs text-white/30">
-												{String(index + 1).padStart(
-													2,
-													"0",
-												)}
-											</span>
+							{filteredProjects.map((project, index) => (
+								<Link
+									key={project.slug}
+									href={`/projects/${project.slug}`}
+									className="group block py-8 first:pt-0 last:pb-0"
+								>
+									<div className="flex gap-5 md:gap-8">
+										{/* Thumbnail */}
+										<div className="relative h-24 w-32 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03] sm:h-28 sm:w-44 md:h-32 md:w-52">
+											<Image
+												src={project.image}
+												alt={project.title}
+												width={200}
+												height={150}
+												className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+											/>
+										</div>
 
-											{/* Content */}
-											<div className="flex-1">
-												{/* Title + Date */}
-												<div className="flex items-start justify-between gap-6">
-													<div className="flex min-w-0 items-center gap-4">
-														<h3 className="text-xl font-medium tracking-tight transition-colors group-hover:text-white/70 md:text-2xl">
-															{project.title}
-														</h3>
+										{/* Content */}
+										<div className="min-w-0 flex-1">
+											{/* Number + Title + Date */}
+											<div className="flex items-start gap-4">
+												{/* Number */}
+												<span className="hidden pt-1 text-xs text-white/30 lg:block">
+													{String(filteredProjects.length - index).padStart(2, "0")}
+												</span>
 
-														<span className="hidden shrink-0 text-xs text-white/30 sm:block">
-															{project.date}
+												<div className="min-w-0 flex-1">
+													{/* Title + Date + Arrow */}
+													<div className="flex items-start justify-between gap-4">
+														<div className="flex min-w-0 flex-wrap items-center gap-3">
+															<h3 className="text-lg font-medium tracking-tight transition-colors group-hover:text-white/70 sm:text-xl md:text-2xl">
+																{project.title}
+															</h3>
+
+															<span className="hidden shrink-0 text-xs text-white/30 sm:block">
+																{new Date(
+																	project.datetime
+																).toLocaleDateString()}
+															</span>
+														</div>
+
+														<span className="shrink-0 text-lg text-white/30 transition-all group-hover:translate-x-1 group-hover:text-white">
+															↗
 														</span>
 													</div>
 
-													<span className="shrink-0 text-lg text-white/30 transition-all group-hover:translate-x-1 group-hover:text-white">
-														↗
-													</span>
-												</div>
+													{/* Mobile Date */}
+													<div className="mt-2 sm:hidden">
+														<span className="text-xs text-white/30">
+															{new Date(
+																project.datetime
+															).toLocaleDateString()}
+														</span>
+													</div>
 
-												{/* Mobile Date */}
-												<div className="mt-2 sm:hidden">
-													<span className="text-xs text-white/30">
-														{project.date}
-													</span>
-												</div>
+													{/* Description */}
+													<p className="mt-3 max-w-2xl text-sm leading-7 text-white/50">
+														{project.description}
+													</p>
 
-												{/* Description */}
-												<p className="mt-3 max-w-2xl text-sm leading-7 text-white/50">
-													{project.description}
-												</p>
-
-												{/* Technologies */}
-												{project.technologies.length >
-													0 && (
-														<div className="mt-5 flex flex-wrap gap-2">
+													{/* Technologies */}
+													{project.technologies.length > 0 && (
+														<div className="mt-4 flex flex-wrap gap-2">
 															{project.technologies.map(
 																(technology) => (
 																	<span
-																		key={
-																			technology
-																		}
+																		key={technology}
 																		className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/40"
 																	>
 																		{technology}
 																	</span>
-																),
+																)
 															)}
 														</div>
 													)}
 
-												{/* Platforms */}
-												<div className="mt-3 flex flex-wrap gap-2">
-													{project.platforms.map(
-														(platform) => (
+													{/* Platforms */}
+													<div className="mt-3 flex flex-wrap gap-2">
+														{project.platforms.map((platform) => (
 															<span
 																key={platform}
 																className="text-xs text-white/30"
 															>
 																{platform}
 															</span>
-														),
-													)}
+														))}
+													</div>
 												</div>
 											</div>
 										</div>
-									</Link>
-								)).reverse()
-							}
+									</div>
+								</Link>
+							))}
 						</div>
 					) : (
 						<div className="border-y border-white/10 py-20 text-center">

@@ -16,7 +16,7 @@ export interface Project {
 	technologies: string[];
 	platforms: string[];
 	slug: string;
-	date: string;
+	datetime: string;
 	section: string;
 	github?: string;
 	videoLink: string;
