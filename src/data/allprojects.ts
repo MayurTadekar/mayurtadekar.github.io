@@ -44,6 +44,253 @@ export const platforms = [
 
 export const allProjects: Project[] = [
 
+	// 82
+	{
+		title: "Interleaved Cube",
+		description: "Each cube vertex contains position, color, normal, and texture-coordinate data arranged sequentially within the same vertex structure. WebGL accesses each attribute using the appropriate stride and memory offset, allowing multiple vertex attributes to be supplied efficiently from a single vertex buffer.",
+		image: "/images/projects/webgl/19.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "interleaved-cube-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/cEc9iXRzLow",
+	},
+
+	// 81
+	{
+		title: "Sun Earth Moon",
+		description: "The project implements a hierarchical Sun, Earth, and Moon system using parent-child transformations. The Earth revolves around the Sun while the Moon revolves around the Earth, demonstrating transformation hierarchies and orbital motion through the WebGL matrix pipeline.",
+		image: "/images/projects/webgl/18.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "sun-earth-moon-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/au587eVlTuY",
+	},
+
+	// 80
+	{
+		title: "24 Materials on 24 Spheres",
+		description: "The project renders 24 spheres with different material properties under the same lighting conditions, demonstrating how ambient, diffuse, and specular material parameters affect surface appearance. The Phong lighting model and GLSL shaders are used to evaluate and display the different material responses.",
+		image: "/images/projects/webgl/17.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "24-materials-on-24-spheres-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/lsxX0FJQnHs",
+	},
+
+	// 79
+	{
+		title: "3 Lights on Revolving Sphere",
+		description: "The project demonstrates three dynamic RGB light sources—red, green, and blue—revolving around a 3D sphere. Phong lighting combines the ambient, diffuse, and specular contributions from each light to produce continuously changing illumination across the sphere's surface.",
+		image: "/images/projects/webgl/16.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "3-lights-on-revolving-sphere-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/6ag4InsiZtM",
+	},
+
+	// 78
+	{
+		title: "Per Vertex — Per Fragment Lighting",
+		description: "The project compares per-vertex and per-fragment Phong lighting, implementing ambient, diffuse, and specular components through GLSL shaders. Per-vertex lighting calculates illumination at vertices and interpolates the results, while per-fragment lighting performs the calculations independently for each fragment.",
+		image: "/images/projects/webgl/15.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "per-vertex-per-fragment-lighting-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/YjSvbZQZ3es",
+	},
+
+	// 77
+	{
+		title: "Two Lights on Spinning Pyramid",
+		description: "The project implements Phong lighting with two independent light sources on a continuously rotating 3D pyramid. Ambient, diffuse, and specular components are calculated per vertex using GLSL shaders, with the resulting lighting values interpolated across the pyramid's surfaces.",
+		image: "/images/projects/webgl/14.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "two-lights-on-spinning-pyramid-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/whV38WU1_cY",
+	},
+
+	// 76
+	{
+		title: "Per Fragment Lighting on Sphere",
+		description: "The project implements the Phong lighting model at the fragment level, calculating ambient, diffuse, and specular components for each rendered fragment using interpolated surface normals and light/view directions. The lighting calculations are performed in the GLSL fragment shader for more accurate surface illumination.",
+		image: "/images/projects/webgl/13.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "per-fragment-lighting-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/EMBqScPRYzI",
+	},
+
+	// 75
+	{
+		title: "Per Vertex Lighting",
+		description: "The project implements the Phong lighting model at the vertex level, calculating ambient, diffuse, and specular components using surface normals and light/view directions. The resulting lighting values are interpolated across the surface by the WebGL rasterization pipeline.",
+		image: "/images/projects/webgl/12.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "per-vertex-lighting-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/DbgKxr7y0k0",
+	},
+
+	// 74
+	{
+		title: "Diffuse Light Sphere",
+		description: "The project demonstrates diffuse lighting on a 3D sphere using surface normals and the direction of a light source. Per-vertex lighting calculations are performed in GLSL, with the resulting intensity interpolated across the sphere's curved surface.",
+		image: "/images/projects/webgl/11.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "diffuse-light-sphere-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/HU2lP0M9_5Y",
+	},
+
+	// 73
+	{
+		title: "Diffuse Light Pyramid",
+		description: "The project demonstrates diffuse lighting on a rotating 3D pyramid using surface normals and the direction of a light source. Per-vertex lighting calculations are performed in GLSL, with the resulting intensity interpolated across the pyramid's surfaces.",
+		image: "/images/projects/webgl/10.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "diffuse-light-pyramid-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/V0f1uhoBjqc",
+	},
+
+	// 72
+	{
+		title: "Diffuse Light Cube",
+		description: "The project demonstrates diffuse lighting on a rotating 3D cube using surface normals and the direction of a light source. Per-vertex lighting calculations are performed in GLSL, with the resulting intensity interpolated across the cube's surfaces.",
+		image: "/images/projects/webgl/09.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "diffuse-light-cube-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/-te7LTXgi5w",
+	},
+
+	// 71
+	{
+		title: "Procedural Texture Checkerboard",
+		description: "The project generates a checkerboard texture procedurally using mathematical logic instead of loading an image from disk. The generated pattern is mapped onto geometry using texture coordinates and processed through the WebGL texture pipeline and GLSL shaders.",
+		image: "/images/projects/webgl/08.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "procedural-texture-checkerboard-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/OF9svqd6DtY",
+	},
+
+	// 70
+	{
+		title: "Textured 3D Shapes",
+		description: "The project applies 2D image textures to 3D pyramid and cube geometry using texture coordinates. Perspective projection and transformation matrices position the objects in 3D space, while GLSL texture sampling renders the mapped textures across their surfaces.",
+		image: "/images/projects/webgl/07.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "textured-3d-shapes-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/LqQ2EtFucmo",
+	},
+
+	// 69
+	{
+		title: "Wicked Smiley",
+		description: "The project demonstrates 2D texture mapping by applying a Wicked Smiley image to rendered geometry using texture coordinates. The texture is sampled in the GLSL fragment shader, introducing image-based rendering through the WebGL texture pipeline.",
+		image: "/images/projects/webgl/06.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "wicked-smiley-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/_nqXHTl9GQA",
+	},
+
+	// 68
+	{
+		title: "3D Rotation — Two Colored 3D Shapes",
+		description: "The project renders two colored 3D shapes and continuously rotates them using 3D transformation matrices. Perspective projection provides the 3D viewing effect, while GLSL shaders drive the WebGL rendering pipeline and real-time animation.",
+		image: "/images/projects/webgl/05.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "3d-rotation-two-colored-3d-shapes-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/e51qf2Ru280",
+	},
+
+	// 67
+	{
+		title: "2D Rotation — Two Animated Shapes",
+		description: "The project renders two colored 2D shapes and continuously rotates them using transformation matrices. The rotation is updated over time to produce smooth animation, demonstrating real-time geometric transformations using GLSL shaders and the WebGL rendering pipeline.",
+		image: "/images/projects/webgl/04.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "2d-rotation-two-animated-shapes-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/6lcx-VICRc0",
+	},
+
+	// 66
+	{
+		title: "Two Colored Shapes",
+		description: "The project renders a colored triangle and rectangle, each using its own vertex color data. The WebGL pipeline interpolates the colors across the primitives, while GLSL shaders process the geometry and color data within the browser rendering pipeline.",
+		image: "/images/projects/webgl/03.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "two-colored-shapes-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/jiIbnJkV_78",
+	},
+
+	// 65
+	{
+		title: "Multi-Colored Rectangle",
+		description: "Each vertex of the rectangle contains a different RGB color, with the WebGL pipeline interpolating these values across the primitive to produce a smooth multi-colored surface. The project uses GLSL shaders to implement the browser-based WebGL rendering pipeline.",
+		image: "/images/projects/webgl/02.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "multi-colored-rectangle-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/6_8ltCoFyMw",
+	},
+
+	// 64
+	{
+		title: "Multi-Colored Triangle",
+		description: "Each vertex of the triangle contains a different RGB color, with the WebGL pipeline interpolating these values across the primitive to produce a smooth multi-colored surface. The project uses GLSL shaders and perspective projection for the browser-based WebGL rendering pipeline.",
+		image: "/images/projects/webgl/01.jpg",
+		technologies: ["WebGL"],
+		platforms: ["Web"],
+		slug: "multi-colored-triangle-webgl",
+		datetime: "2026-10-07T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/OumE_d0jzno",
+	},
+
 	// 63
 	{
 		title: "Interleaved Cube",
