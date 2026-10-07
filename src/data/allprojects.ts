@@ -44,7 +44,7 @@ export const platforms = [
 
 export const allProjects: Project[] = [
 
-	// 21
+	// 103
 	{
 		title: "Interleaved Cube",
 		description: "Interleaved vertex data layout with position, color, normal, and texture-coordinate attributes stored sequentially within the same vertex structure. OpenGL accesses each attribute using the appropriate stride and memory offset, demonstrating efficient vertex buffer organization.",
@@ -57,7 +57,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/bRE-ZJQUxKo",
 	},
 
-	// 20
+	// 102
 	{
 		title: "Geometry Shader",
 		description: "Demonstrates geometry shader processing by taking a single input triangle and generating three output triangles on the GPU. The project explores primitive generation and geometry amplification within the programmable OpenGL pipeline.",
@@ -70,7 +70,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/E4cIuychKyc",
 	},
 
-	// 19
+	// 101
 	{
 		title: "Tessellation Shader",
 		description: "Generates a smooth Bezier curve using OpenGL tessellation shaders. Control points are processed on the GPU through tessellation control and evaluation stages, demonstrating programmable tessellation and GPU-based geometry generation.",
@@ -83,7 +83,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/IlBi2srHiV4",
 	},
 
-	// 18
+	// 100
 	{
 		title: "Sun Earth Moon",
 		description: "Implements a hierarchical Sun, Earth, and Moon system using parent-child transformations. The Earth revolves around the Sun while the Moon revolves around the Earth, demonstrating transformation hierarchies and orbital motion through the OpenGL matrix pipeline.",
@@ -96,7 +96,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/VI9f6MmxjBo",
 	},
 
-	// 17
+	// 99
 	{
 		title: "24 Materials on 24 Spheres",
 		description: "Renders 24 spheres using different ambient, diffuse, and specular material properties under the same lighting conditions. The project demonstrates how material parameters influence surface appearance using the Phong lighting model.",
@@ -109,7 +109,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/SIMULHcj4dM",
 	},
 
-	// 16
+	// 98
 	{
 		title: "3 Lights on Revolving Sphere",
 		description: "A sphere is illuminated by three independently moving red, green, and blue light sources revolving around the object. The project demonstrates dynamic light movement, RGB illumination, and multi-light Phong lighting calculations.",
@@ -122,7 +122,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/-9UUvKFoSsQ",
 	},
 
-	// 15
+	// 97
 	{
 		title: "Per Vertex — Per Fragment Lighting",
 		description: "Compares per-vertex and per-fragment Phong lighting approaches. Per-vertex lighting is calculated at each vertex and interpolated across the primitive, while per-fragment lighting performs the lighting calculation independently for each fragment.",
@@ -135,7 +135,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/Fs8bXxae-RQ",
 	},
 
-	// 14
+	// 96
 	{
 		title: "Two Lights on Spinning Pyramid",
 		description: "Demonstrates two independent light sources illuminating a rotating pyramid using the Phong lighting model. Ambient, diffuse, and specular contributions from both lights are calculated and combined to produce the final surface illumination.",
@@ -148,7 +148,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/NJW0U0eVl0E",
 	},
 
-	// 13
+	// 95
 	{
 		title: "Per Fragment Lighting",
 		description: "Demonstrates Phong lighting calculated at the fragment level on a 3D sphere. Ambient, diffuse, and specular components are evaluated for each fragment using interpolated surface normals, producing smoother and more accurate lighting across the rendered surface.",
@@ -161,7 +161,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/f4BQMSWB5v0",
 	},
 
-	// 12
+	// 94
 	{
 		title: "Per Vertex Lighting",
 		description: "Implements Phong lighting calculations at the vertex level. Ambient, diffuse, and specular components are calculated using vertex normals, light direction, and viewer direction, with the resulting lighting values interpolated across the rendered surface.",
@@ -174,7 +174,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/RmgZi63IzME",
 	},
 
-	// 11
+	// 93
 	{
 		title: "Diffuse Light Sphere",
 		description: "Demonstrates diffuse lighting on a 3D sphere using surface normals and light direction. The lighting intensity varies across the curved surface according to the angle between the surface normal and incoming light direction.",
@@ -187,7 +187,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/Lb8XAplrQ-4",
 	},
 
-	// 10
+	// 92
 	{
 		title: "Diffuse Light Pyramid",
 		description: "Demonstrates diffuse lighting on a rotating 3D pyramid. Surface normals and light direction are used to calculate the lighting intensity across the pyramid faces using GLSL shaders.",
@@ -200,7 +200,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/_pankbugHY4",
 	},
 
-	// 9
+	// 91
 	{
 		title: "Diffuse Light Cube",
 		description: "Implements diffuse lighting on a rotating 3D cube using surface normals and light direction. The project demonstrates how the orientation of each cube surface affects its response to a light source.",
@@ -213,7 +213,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/FTA9ju8qaGA",
 	},
 
-	// 8
+	// 90
 	{
 		title: "Procedural Texture Checkerboard",
 		description: "Generates a checkerboard texture procedurally using mathematical calculations rather than a stored image. The pattern is generated and applied through GLSL, demonstrating procedural texture generation and shader-based pattern creation.",
@@ -226,7 +226,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/YpgcAy1FwkI",
 	},
 
-	// 7
+	// 89
 	{
 		title: "Textured 3D Shapes",
 		description: "Applies 2D image textures to a 3D pyramid and cube using texture coordinates. The project demonstrates textured geometry, perspective projection, transformation matrices, and GLSL texture sampling.",
@@ -239,7 +239,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/XQeE-WZJfD0",
 	},
 
-	// 6
+	// 88
 	{
 		title: "Wicked Smiley",
 		description: "Demonstrates 2D texture mapping by applying the Wicked Smiley image to a rendered quad. Texture coordinates are used to map the image onto the geometry, while the GLSL fragment shader samples the texture during rendering.",
@@ -252,7 +252,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/fHXL6QZosNs",
 	},
 
-	// 5
+	// 87
 	{
 		title: "3D Rotation — Two Colored 3D Shapes",
 		description: "Renders two colored 3D shapes with continuous rotation using transformation matrices. The project demonstrates 3D rotation, perspective projection, real-time animation, and programmable vertex and fragment shaders.",
@@ -265,7 +265,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/VaYMYQmevz8",
 	},
 
-	// 4
+	// 86
 	{
 		title: "2D Rotation — Two Animated Shapes",
 		description: "Demonstrates real-time 2D rotation by continuously rotating two colored shapes using transformation matrices. The rotation angle is updated over time to create smooth animation through the OpenGL rendering pipeline.",
@@ -278,7 +278,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/TIbDr_wY1Uk",
 	},
 
-	// 3
+	// 85
 	{
 		title: "Two Colored Shapes",
 		description: "Renders a triangle and rectangle using independent vertex color attributes. The project demonstrates multiple primitive rendering, color interpolation, GLSL shaders, and the basic OpenGL rendering pipeline.",
@@ -291,7 +291,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/Lvav2ec3z24",
 	},
 
-	// 2
+	// 84
 	{
 		title: "Multi-Colored Rectangle",
 		description: "Renders a multi-colored rectangle using per-vertex RGB color attributes and perspective projection. OpenGL interpolates the vertex colors across the primitive while GLSL shaders process the geometry and color data.",
@@ -304,7 +304,7 @@ export const allProjects: Project[] = [
 		videoLink: "https://www.youtube.com/embed/D4QP08FF5Gw",
 	},
 
-	// 1
+	// 83
 	{
 		title: "Multi-Colored Triangle",
 		description: "Demonstrates a multi-colored triangle using per-vertex RGB color attributes and perspective projection. Each vertex is assigned a different color, which is interpolated across the triangle through the OpenGL rendering pipeline.",
