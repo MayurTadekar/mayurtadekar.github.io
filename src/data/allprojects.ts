@@ -14,9 +14,10 @@ export const technologies = [
 	"All",
 	"OpenGL",
 	"OpenGL ES",
+	"WebGL",
+	"Direct3D 11",
 	"CUDA",
 	"OpenCL",
-	"WebGL",
 ];
 
 export const platforms = [
@@ -43,6 +44,266 @@ export const platforms = [
 // },
 
 export const allProjects: Project[] = [
+
+	// 142
+	{
+		title: "Interleaved Cube",
+		description: "Interleaved vertex data layout with position, color, normal, and texture-coordinate attributes stored sequentially within the same vertex structure. Direct3D 11 accesses each attribute using the appropriate stride and memory offset through the input layout, demonstrating structured vertex buffer organization.",
+		image: "/images/projects/d3d11/20.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "interleaved-cube-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/R806gVr-3Cw",
+	},
+
+	// 141
+	{
+		title: "Geometry Shader - 1 Triangle to 3 Triangles",
+		description: "A geometry shader demonstration where a single input triangle is processed and expanded into multiple output triangles. The project explores primitive amplification and programmable geometry generation using HLSL.",
+		image: "/images/projects/d3d11/19.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "geometry-shader-1-triangle-to-3-triangles-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/o3KaerXSPVk",
+	},
+
+	// 140
+	{
+		title: "Tessellation Shader - Bezier Curve",
+		description: "A Direct3D 11 tessellation project demonstrating GPU-based generation of a Bezier curve. Control points are processed through the tessellation pipeline to dynamically generate the curve geometry using programmable shader stages.",
+		image: "/images/projects/d3d11/18.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "tessellation-shader-bezier-curve-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/t1ogCffKBPc",
+	},
+
+	// 139
+	{
+		title: "24 Materials on 24 Spheres",
+		description: "A material and lighting demonstration rendering 24 spheres with different material properties. Ambient, diffuse, and specular coefficients are varied to demonstrate how material parameters affect the appearance of objects under the same lighting model.",
+		image: "/images/projects/d3d11/17.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "24-materials-24-spheres-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/oZ4tRtSRKd4",
+	},
+
+	// 138
+	{
+		title: "3 Lights on Revolving Sphere - RGB Lighting",
+		description: "A dynamic lighting scene featuring three independently moving red, green, and blue light sources revolving around a sphere. The project demonstrates multiple light sources, RGB lighting, Phong illumination, and real-time animation.",
+		image: "/images/projects/d3d11/16.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "3-lights-revolving-sphere-rgb-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/dnLb-8eq38k",
+	},
+
+	// 137
+	{
+		title: "Per Vertex - Per Fragment Lighting",
+		description: "A comparative Direct3D 11 lighting implementation demonstrating both per-vertex and per-fragment Phong lighting. The project highlights the difference between interpolated vertex-level lighting and lighting calculations performed independently for each fragment.",
+		image: "/images/projects/d3d11/15.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "per-vertex-per-fragment-lighting-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/OwQzYrY0k8I",
+	},
+
+	// 136
+	{
+		title: "Two Lights on Spinning Pyramid - Phong Lighting",
+		description: "A real-time lighting project demonstrating two independent light sources applied to a rotating pyramid. Ambient, diffuse, and specular components are calculated using the Phong lighting model through HLSL shaders.",
+		image: "/images/projects/d3d11/14.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "two-lights-spinning-pyramid-phong-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/Ii36Q2PrnJA",
+	},
+
+	// 135
+	{
+		title: "Per Fragment Lighting on Sphere",
+		description: "A Direct3D 11 implementation of Phong lighting calculated per fragment on a sphere. Lighting calculations are performed in the pixel shader, providing detailed lighting variation across the surface.",
+		image: "/images/projects/d3d11/13.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "per-fragment-lighting-sphere-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/_Vx1KWLQt2U",
+	},
+
+	// 134
+	{
+		title: "Per Vertex Lighting",
+		description: "A Direct3D 11 implementation of Phong lighting calculated at the vertex level. Ambient, diffuse, and specular components are evaluated in the vertex shader and interpolated across the rendered surface.",
+		image: "/images/projects/d3d11/12.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "per-vertex-lighting-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/vDYhaq32jm4",
+	},
+
+	// 133
+	{
+		title: "Diffuse Light Sphere",
+		description: "A Direct3D 11 implementation of diffuse lighting on a 3D sphere. The varying surface normals across the sphere demonstrate how diffuse illumination changes across the object's surface based on the light direction.",
+		image: "/images/projects/d3d11/11.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "diffuse-light-sphere-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/YLIKygKo5nI",
+	},
+
+	// 132
+	{
+		title: "Diffuse Light Pyramid",
+		description: "A real-time Direct3D 11 lighting project demonstrating diffuse illumination on a rotating pyramid. The project uses surface normals, light direction, transformations, and HLSL lighting calculations to produce directional lighting across the geometry.",
+		image: "/images/projects/d3d11/10.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "diffuse-light-pyramid-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/PDzkzS98EVc",
+	},
+
+	// 131
+	{
+		title: "Diffuse Light Cube",
+		description: "A Direct3D 11 lighting implementation applying diffuse illumination to a 3D cube. Surface normals and light direction are used to calculate the intensity of illumination through HLSL shader calculations.",
+		image: "/images/projects/d3d11/09.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "diffuse-light-cube-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/db6t8cNkFQk",
+	},
+
+	// 130
+	{
+		title: "Procedural Texture Checkerboard",
+		description: "A procedural rendering project that generates a checkerboard pattern through shader calculations rather than relying on a pre-generated image. It demonstrates texture-coordinate processing and GPU-based procedural pattern generation using HLSL.",
+		image: "/images/projects/d3d11/08.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "procedural-texture-checkerboard-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/nBbLHutmjTI",
+	},
+
+	// 129
+	{
+		title: "Textured 3D Shapes - Pyramid & Cube",
+		description: "A Direct3D 11 project rendering textured 3D geometry consisting of a pyramid and cube. It demonstrates texture coordinates, texture resources, HLSL texture sampling, 3D transformations, and perspective projection.",
+		image: "/images/projects/d3d11/07.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "textured-3d-shapes-pyramid-cube-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/eYxnHcAog9o",
+	},
+
+	// 128
+	{
+		title: "Wicked Smiley",
+		description: "A Direct3D 11 texture-mapping project demonstrating how a 2D image is mapped onto geometry using texture coordinates. The HLSL pixel shader samples the texture while the rendering pipeline handles the underlying geometry and transformations.",
+		image: "/images/projects/d3d11/06.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "wicked-smiley-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/2Ylbvrg8C-w",
+	},
+
+	// 127
+	{
+		title: "3D Rotation - Two Colored 3D Shapes",
+		description: "A 3D rendering project demonstrating continuous rotation of two colored objects using Direct3D 11. It combines world transformations, perspective projection, constant buffers, and HLSL vertex processing to render animated 3D geometry.",
+		image: "/images/projects/d3d11/05.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "3d-rotation-two-colored-3d-shapes-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/tfldBzzPbZM",
+	},
+
+	// 126
+	{
+		title: "2D Rotation - Two Animated Shapes",
+		description: "A real-time 2D transformation project demonstrating continuous rotation of two shapes. Transformation matrices are updated during rendering and supplied to the HLSL vertex shader through constant buffers.",
+		image: "/images/projects/d3d11/04.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "2d-rotation-two-animated-shapes-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/lghqcAt53ro",
+	},
+
+	// 125
+	{
+		title: "Two Colored Shapes",
+		description: "A Direct3D 11 scene containing two independently rendered colored shapes. The project demonstrates rendering multiple primitives while managing vertex data, transformations, and shader-based color processing through the D3D11 graphics pipeline.",
+		image: "/images/projects/d3d11/03.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "two-colored-shapes-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/rVy9pw2qgtk",
+	},
+
+	// 124
+	{
+		title: "Multi-Colored Rectangle",
+		description: "A Direct3D 11 implementation of a multi-colored rectangle using per-vertex color attributes. The project demonstrates primitive rendering, vertex buffers, input layouts, HLSL shaders, and perspective transformation.",
+		image: "/images/projects/d3d11/02.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "multi-colored-rectangle-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/z6GX1S-O0c4",
+	},
+
+	// 123
+	{
+		title: "Multi-Colored Triangle",
+		description: "A foundational Direct3D 11 rendering project demonstrating a multi-colored triangle using per-vertex position and RGB color data. The project establishes the basic D3D11 pipeline with vertex buffers, input layouts, constant buffers, and HLSL vertex and pixel shaders.",
+		image: "/images/projects/d3d11/01.jpg",
+		technologies: ["Direct3D 11", "HLSL"],
+		platforms: ["Windows"],
+		slug: "multi-colored-triangle-d3d11",
+		datetime: "2026-10-08T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/9NO__-CQLRU",
+	},
 
 	// 122
 	{
