@@ -45,6 +45,32 @@ export const platforms = [
 
 export const allProjects: Project[] = [
 
+	// 144
+	{
+		title: "Render to Texture - Teapot on Cube",
+		description: "Demonstrates the use of Framebuffer Objects (FBOs) for off-screen rendering in OpenGL on Linux. Explores framebuffer management, render targets, and framebuffer attachments as a foundation for render-to-texture and multi-pass rendering.",
+		image: "/images/projects/opengl_linux/22.jpg",
+		technologies: ["OpenGL", "GLSL"],
+		platforms: ["Linux"],
+		slug: "framebuffer-object-fbo-opengl-linux",
+		datetime: "2026-10-12T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/0se7C0dcsvU?si=667yXvkQoxz2cSSB",
+	},
+
+	// 143
+	{
+		title: "Render to Texture - Teapot on Cube",
+		description: "Demonstrates the render-to-texture technique by rendering a teapot into an off-screen texture and applying the resulting texture to a cube. Explores render targets, texture resources, and multi-pass rendering using OpenGL.",
+		image: "/images/projects/opengl_windows/22.jpg",
+		technologies: ["OpenGL", "GLSL"],
+		platforms: ["Windows"],
+		slug: "render-to-texture-teapot-on-cube-opengl-windows",
+		datetime: "2026-10-10T00:00:00Z",
+		section: "RTR",
+		videoLink: "https://www.youtube.com/embed/b1-Mmb16wYQ?si=4N_4L9Q7N_nilbUR",
+	},
+
 	// 142
 	{
 		title: "Interleaved Cube",
